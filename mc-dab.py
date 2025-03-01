@@ -12,7 +12,8 @@ DEFAULT_BACKUP_DIR = "/home/luca/Documents/mc-docker-autobackup/backups/"
 MAX_BACKUPS = 5
 
 logging.basicConfig(
-    filename = "backup_log.txt",
+    #use absolute path for cron compatibility
+    filename = "/home/luca/minecraft-server/mc-dab/backup_log.txt",
     level = logging.INFO,
     format = "%(asctime)s - %(levelname)s - %(message)s"
 )
