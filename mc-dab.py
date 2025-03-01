@@ -13,7 +13,7 @@ MAX_BACKUPS = 5
 
 logging.basicConfig(
     #use absolute path for cron compatibility
-    filename = "/home/luca/minecraft-server/mc-dab/backup_log.txt",
+    filename = "/home/luca/minecraft-server/mc-dab/backup_log.log",
     level = logging.INFO,
     format = "%(asctime)s - %(levelname)s - %(message)s"
 )
