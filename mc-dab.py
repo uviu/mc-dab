@@ -41,7 +41,7 @@ def backup_world():
     os.makedirs(os.path.dirname(backup_path), exist_ok=True)
 
     #compressing the world folder
-    log_and_print(f"backing up world to {DEFAULT_BACKUP_DIR}")
+    log_and_print(f"backing up world to {DEFAULT_BACKUP_DIR} !can take a while depending on world size and read/write speed")
     with tarfile.open(backup_path, "w:gz") as tar:
         tar.add(DEFAULT_WORLD_PATH, arcname="world")
 
