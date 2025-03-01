@@ -5,11 +5,11 @@ import os
 import subprocess
 import tarfile
 
-#path configs !change accordingly
+#absolute path configs !change accordingly
 CONTAINER_NAME = "your_minecraft_container"
 DEFAULT_WORLD_PATH = "/home/luca/Documents/mc-docker-autobackup/minecraft-server/world/"
 DEFAULT_BACKUP_DIR = "/home/luca/Documents/mc-docker-autobackup/backups/"
-MAX_BACKUPS = 1
+MAX_BACKUPS = 5
 
 logging.basicConfig(
     filename = "backup_log.txt",
@@ -65,4 +65,3 @@ def cleanup_backups(backup_dir):
 
 if __name__ == "__main__":
     backup_world()
-
